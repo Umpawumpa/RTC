@@ -1,0 +1,21 @@
+extends layout
+block content
+  h1 Климатические испытания
+  hr
+  panel.panel-default
+      each system in systems 
+        .panel-body
+          table
+            tr
+              td(rowspan='2') 
+                p: img(src=`images/${system.code}.jpg`)
+              td 
+                ul.list-group
+                  li.list-group-item 
+                    p= system.name
+            tr
+              td
+                  li.list-group-item 
+                    p= system.manufacturer
+                  li.list-group-item 
+                    p= system.details 

@@ -1,0 +1,39 @@
+
+* { 
+    font-family: Arial black;
+    font-size: 12pt; 
+}
+
+body {
+    background-color: #beeeef;
+    background-image: url(images/bg.jpg);
+    background-attachment: fixed;
+}
+
+#content img {
+     border-radius: 8px;
+     height: 280px;
+     width: 300px; 
+}
+content{
+    margin:20pt;
+}
+
+#whollyInf p {
+font-size: 12pt; 
+}
+#whollyInf ol li {
+font-size: 12pt;
+}
+#whollyInf ol ul li {
+font-size: 12pt;
+}
+#content h1 {
+    font-size:18pt; 
+    }
+#navbar img{
+    height: 50px;
+}
+dt{
+    padding: 10px;
+}
