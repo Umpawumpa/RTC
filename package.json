@@ -1,8 +1,7 @@
 {
-  "name": "test",
+  "name": "rtc",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "rtctest.ru",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,7 +11,6 @@
   "dependencies": {
     "bootstrap3": "^3.3.5",
     "express": "^4.14.0",
-    "pug": "^2.0.0-beta4",
-    "sendgrid": "^3.0.10"
+    "pug": "^2.0.0-beta4"
   }
 }
