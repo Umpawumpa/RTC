@@ -28,6 +28,15 @@ font-size: 12pt;
 #whollyInf ol ul li {
 font-size: 12pt;
 }
+#whollyInf #email {
+    width:250px;
+}
+#whollyInf #Textarea {
+    width:300px;
+    height: 80px;
+    resize: none; 
+}
+
 #content h1 {
     font-size:18pt; 
     }
