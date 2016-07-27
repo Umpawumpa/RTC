@@ -11,8 +11,11 @@ block content
                 p: img(src=`images/${system.code}.jpg`)
               td 
                 ul.list-group
-                  li.list-group-item 
-                      p#heder= system.name
+                  li.list-group-item
+                    strong
+                      a(name=`${system.code}`) 
+                      a(href=`#${system.code}`)
+                        p#heder= system.name
             tr
               td
                   li.list-group-item 

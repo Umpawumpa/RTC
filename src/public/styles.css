@@ -40,6 +40,9 @@ font-size: 12pt;
 #content h1 {
     font-size:18pt; 
     }
+#content #heder {
+    color:black;
+}
 #navbar img{
     height: 50px;
 }

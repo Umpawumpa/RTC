@@ -13,7 +13,9 @@ block content
                 ul.list-group
                   li.list-group-item
                     strong 
-                      p#heder= system.name
+                      a(name=`${system.code}`) 
+                      a(href=`#${system.code}`)
+                        p#heder= system.name
             tr
               td
                   li.list-group-item 
