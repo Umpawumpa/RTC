@@ -1,6 +1,6 @@
 extends layout
 block content
-  h1 Механические исрытания
+  h1 Механические испытания
   hr
   panel.panel-default
       each system in systems 
@@ -11,8 +11,9 @@ block content
                 p: img(src=`images/${system.code}.jpg`)
               td 
                 ul.list-group
-                  li.list-group-item 
-                    p= system.name
+                  li.list-group-item
+                    strong 
+                      p#heder= system.name
             tr
               td
                   li.list-group-item 

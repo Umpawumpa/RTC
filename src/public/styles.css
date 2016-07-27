@@ -11,9 +11,9 @@ body {
 }
 
 #content img {
-     border-radius: 8px;
-     height: 280px;
-     width: 300px; 
+     border-radius: 10px;
+     height: 290px;
+     width: 250px; 
 }
 content{
     margin:20pt;
@@ -36,4 +36,7 @@ font-size: 12pt;
 }
 dt{
     padding: 10px;
+}
+#heder{
+    font-weight:bold;
 }

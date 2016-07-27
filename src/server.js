@@ -15,18 +15,18 @@ if (!port) {
 var data = fs.readFileSync(__dirname + '/assets/data.json', 'utf-8');
 var systems = JSON.parse(data);
 
-const CLIMATIC = [1,2,3,4,5,6,7,8,9,10,11,12];
-const MECHANIC = [16,17,18,19,20,21,22];
-const VACUUM = [13,14,15];
+const CLIMATIC = [1,2,3,4,5,6,7,8,9,10,11,12, 23,24];//klimatick numbers
+const MECHANIC = [16,17,18,19,20,21,22];//mech numbers
+const VACUUM = [13,14,15];//vacuum numbers
 
 var meachnicSystems = 
-  systems.filter((s) => CLIMATIC.indexOf(parseInt(s.code)) > -1);
-
-var vacuumSystems = 
   systems.filter((s) => MECHANIC.indexOf(parseInt(s.code)) > -1);
 
-var climaticSystems = 
+var vacuumSystems = 
   systems.filter((s) => VACUUM.indexOf(parseInt(s.code)) > -1);
+
+var climaticSystems = 
+  systems.filter((s) => CLIMATIC.indexOf(parseInt(s.code)) > -1);
 
 
 ///////////////////////////////////////////////////////////////////////////////

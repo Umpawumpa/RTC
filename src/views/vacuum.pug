@@ -1,6 +1,6 @@
 extends layout
 block content
-  h1 Вакуумные Испытания
+  h1 Вакуумные испытания
   hr
   panel.panel-default
       each system in systems 
@@ -12,7 +12,8 @@ block content
               td 
                 ul.list-group
                   li.list-group-item 
-                    p= system.name
+                    strong
+                      p#heder= system.name
             tr
               td
                   li.list-group-item 
