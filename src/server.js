@@ -40,7 +40,7 @@ app.set('view engine', 'pug');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
-  res.render('about');
+  res.render('about', { indexClass: 'active' });
 });
 
 app.get('/contacts', function(req, res) {
@@ -71,5 +71,8 @@ app.post('/mail', function(req, res) {
   console.log(res.body);
 });
 
-app.listen(port, function() { console.log('Listening on ' + port + '..')});
 
+///////////////////////////////////////////////////////////////////////////////
+// THE END
+///////////////////////////////////////////////////////////////////////////////
+app.listen(port, function() { console.log('Listening on ' + port + '..')});

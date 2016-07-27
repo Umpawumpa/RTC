@@ -18,7 +18,10 @@ body {
 content{
     margin:20pt;
 }
-
+#whollyInf #index_img {
+    width:500px;
+    height: 500px; 
+}
 #whollyInf p {
 font-size: 12pt; 
 }
