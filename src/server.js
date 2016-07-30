@@ -43,6 +43,7 @@ app.get('/', function(req, res) {
   res.render('layout', {climsystems: climaticSystems,vacsystems: vacuumSystems,meachsystems: meachnicSystems, indexClass: 'active' });
 });
 
+<<<<<<< HEAD
 // app.get('/contacts', function(req, res) {
 //   res.render('contacts', { contactsClass: 'active' });
 // });
@@ -62,6 +63,27 @@ app.get('/', function(req, res) {
 // app.get('/climatic', function(req, res) {
 //   res.render('climatic',{ climsystems: climaticSystems, equipmentClass: 'active' });
 // });
+=======
+app.get('/contacts', function(req, res) {
+  res.render('contacts', { contactsClass: 'active' });
+});
+
+app.get('/services', function(req, res) {
+  res.render('services', { servicesClass: 'active' });
+});
+
+app.get('/mechanic', function(req, res) {    
+  res.render('mechanic', { systems: meachnicSystems, equipmentClass: 'active' });
+});
+
+app.get('/vacuum', function(req, res) {
+  res.render('vacuum', { systems: vacuumSystems, equipmentClass: 'active' });
+});
+
+app.get('/climatic', function(req, res) {
+  res.render('climatic',{ systems: climaticSystems, equipmentClass: 'active' });
+});
+>>>>>>> e6271907d165e729e150087fad2b9103979bacd0
 
 ///////////////////////////////////////////////////////////////////////////////
 // E-MAIL

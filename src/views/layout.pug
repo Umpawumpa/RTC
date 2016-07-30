@@ -105,6 +105,7 @@ html(lang='ru')
 
 
 
+<<<<<<< HEAD
            
     // Mechanic Section
     section#mechanic.container.content-section.text-center
@@ -173,3 +174,53 @@ html(lang='ru')
     script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false')
     // Theme JavaScript
     script(src='js/scripts.js')
+=======
+
+  body
+    div.container
+      
+      //- NAVIGATION
+      nav.navbar.navbar-default
+        .container-fluid
+          .navbar-header
+              button.navbar-toggle.collapsed(
+              type='button', 
+              data-toggle='collapse', 
+              data-target='#navbar', 
+              aria-expanded='false', 
+              aria-controls='navbar'
+            )
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+
+
+          #navbar.navbar-collapse.collapse
+            ul.nav.navbar-nav
+              li(class=`${indexClass}`)
+                a(href='/') Главная
+              li(class=`${servicesClass}`)
+                a(href='/services') Услуги
+              li.dropdown(class=`${equipmentClass}`)
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Оборудование 
+                  span.caret
+                ul.dropdown-menu
+                  li
+                    a(href='/mechanic') Механические испытания
+                  li
+                    a(href='/climatic')  Климатические испытания 
+                  li
+                    a(href='/vacuum') Вакуумные испытания
+              li(class=`${contactsClass}`)
+                a(href='/contacts') Контакты
+
+            ul.nav.navbar-nav.navbar-right
+                li
+                  img(src='images/logo.jpg')
+
+
+      //- CONTENT
+      div.jumbotron(id="content")
+        block content
+>>>>>>> e6271907d165e729e150087fad2b9103979bacd0
