@@ -40,28 +40,28 @@ app.set('view engine', 'pug');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
-  res.render('about', { indexClass: 'active' });
+  res.render('layout', {climsystems: climaticSystems,vacsystems: vacuumSystems,meachsystems: meachnicSystems, indexClass: 'active' });
 });
 
-app.get('/contacts', function(req, res) {
-  res.render('contacts');
-});
+// app.get('/contacts', function(req, res) {
+//   res.render('contacts', { contactsClass: 'active' });
+// });
 
-app.get('/services', function(req, res) {
-  res.render('services');
-});
+// app.get('/services', function(req, res) {
+//   res.render('services', { servicesClass: 'active' });
+// });
 
-app.get('/mechanic', function(req, res) {    
-  res.render('mechanic', { systems: meachnicSystems });
-});
+// app.get('/mechanic', function(req, res) {    
+//   res.render('mechanic', { meachsystems: meachnicSystems, equipmentClass: 'active' });
+// });
 
-app.get('/vacuum', function(req, res) {
-  res.render('vacuum', { systems: vacuumSystems });
-});
+// app.get('/vacuum', function(req, res) {
+//   res.render('vacuum', { vacsystems: vacuumSystems, equipmentClass: 'active' });
+// });
 
-app.get('/climatic', function(req, res) {
-  res.render('climatic',{ systems: climaticSystems });
-});
+// app.get('/climatic', function(req, res) {
+//   res.render('climatic',{ climsystems: climaticSystems, equipmentClass: 'active' });
+// });
 
 ///////////////////////////////////////////////////////////////////////////////
 // E-MAIL

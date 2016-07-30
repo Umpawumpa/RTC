@@ -5,20 +5,34 @@ block content
   panel.panel-default
       each system in systems 
         .panel-body
-          table
+          table.table.table-bordered
             tr
-              td(rowspan='2') 
+              td(rowspan='3') 
                 p: img(src=`images/${system.code}.jpg`)
               td 
-                ul.list-group
-                  li.list-group-item
-                    strong 
+                strong 
                       a(name=`${system.code}`) 
                       a(href=`#${system.code}`)
                         p#heder= system.name
             tr
-              td
-                  li.list-group-item 
-                    p= system.manufacturer
-                  li.list-group-item 
-                    p= system.details 
+              td 
+                p= system.manufacturer
+            tr
+              td 
+                p= system.details
+          //-   tr
+          //-     td(rowspan='2') 
+          //-       p: img(src=`images/${system.code}.jpg`)
+          //-     td 
+          //-       ul.list-group
+          //-         li.list-group-item
+          //-           strong 
+          //-             a(name=`${system.code}`) 
+          //-             a(href=`#${system.code}`)
+          //-               p#heder= system.name
+          //-   tr
+          //-     td
+          //-         li.list-group-item 
+          //-           p= system.manufacturer
+          //-         li.list-group-item 
+          //-           p= system.details 

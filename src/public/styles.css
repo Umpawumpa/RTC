@@ -55,3 +55,7 @@ dt{
 #heder{
     font-weight:bold;
 }
+.affix {
+      top: 0;
+      width: 80%;
+  }
