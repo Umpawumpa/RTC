@@ -62,34 +62,34 @@ app.get('/', function(req, res) {
 // app.get('/climatic', function(req, res) {
 //   res.render('climatic',{ climsystems: climaticSystems, equipmentClass: 'active' });
 // });
-app.get('/contacts', function(req, res) {
-  res.render('contacts', { contactsClass: 'active' });
-});
+// app.get('/contacts', function(req, res) {
+//   res.render('contacts', { contactsClass: 'active' });
+// });
 
-app.get('/services', function(req, res) {
-  res.render('services', { servicesClass: 'active' });
-});
+// app.get('/services', function(req, res) {
+//   res.render('services', { servicesClass: 'active' });
+// });
 
-app.get('/mechanic', function(req, res) {    
-  res.render('mechanic', { systems: meachnicSystems, equipmentClass: 'active' });
-});
+// app.get('/mechanic', function(req, res) {    
+//   res.render('mechanic', { systems: meachnicSystems, equipmentClass: 'active' });
+// });
 
-app.get('/vacuum', function(req, res) {
-  res.render('vacuum', { systems: vacuumSystems, equipmentClass: 'active' });
-});
+// app.get('/vacuum', function(req, res) {
+//   res.render('vacuum', { systems: vacuumSystems, equipmentClass: 'active' });
+// });
 
-app.get('/climatic', function(req, res) {
-  res.render('climatic',{ systems: climaticSystems, equipmentClass: 'active' });
-});
+// app.get('/climatic', function(req, res) {
+//   res.render('climatic',{ systems: climaticSystems, equipmentClass: 'active' });
+// });
 
 
 ///////////////////////////////////////////////////////////////////////////////
 // E-MAIL
 ///////////////////////////////////////////////////////////////////////////////
-app.post('/mail', function(req, res) {
-  console.log('asdasdas');
-  console.log(res.body);
-});
+// app.post('/mail', function(req, res) {
+//   console.log('asdasdas');
+//   console.log(res.body);
+// });
 ///////////////////////////////////////////////////////////////////////////////
 // THE END
 ///////////////////////////////////////////////////////////////////////////////
