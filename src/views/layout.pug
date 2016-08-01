@@ -87,16 +87,14 @@ html(lang='ru')
           h2 Климатические испытания
           ul.nav.nav-pills
             li.dropdown(role='presentation')
-              a.dropdown-toggle(data-toggle='dropdown', href='#', role='button', aria-haspopup='true', aria-expanded='false') touch
-                span.caret
-              ul.dropdown-menu
-                li
+               button.btn.btn-info(type='button', data-toggle='collapse', data-target='#demo') Simple collapsible
+               .collapse
                   each system in climsystems 
                     .panel-body
                       table#tablesettings.table.table-bordered
                         tr
                           td(rowspan='3') 
-                            p: img(src=`images/${system.code}.jpg`)
+                            //p: img(src=`images/${system.code}.jpg`)
                           td 
                             strong 
                                   a(name=`${system.code}`) 
@@ -115,44 +113,38 @@ html(lang='ru')
           h2 Механические испытания
           ul.nav.nav-pills
             li.dropdown(role='presentation')
-              a.dropdown-toggle(data-toggle='dropdown', href='#', role='button', aria-haspopup='true', aria-expanded='false') touch
-                span.caret
-              ul.dropdown-menu
-                li
-                  each system in meachsystems 
-                    .panel-body
-                      table#tablesettings.table.table-bordered
-                        tr
-                          td(rowspan='3') 
-                            p: img(src=`images/${system.code}.jpg`)
-                          td 
-                            strong 
-                                  a(name=`${system.code}`) 
-                                  a(href=`#${system.code}`)
-                                    p#heder= system.name
-                        tr
-                          td 
-                            p= system.manufacturer
-                        tr
-                          td 
-                            p= system.details
-              // Vacuum Section
+               button.btn.btn-info(type='button', data-toggle='collapse', data-target='#demo') Simple collapsible
+               .collapse
+                      each system in meachsystems 
+                        .panel-body
+                          table#tablesettings.table.table-bordered
+                            tr
+                              td(rowspan='3') 
+                                //p: img(src=`images/${system.code}.jpg`)
+                              td 
+                                strong 
+                                      a(name=`${system.code}`) 
+                                      a(href=`#${system.code}`)
+                                        p#heder= system.name
+                            tr
+                              td 
+                                p= system.manufacturer
+                            tr
+                              td 
+                                p= system.details
+              
     section#vacuum.container.content-section.text-center
       .row
         .col-lg-8.col-lg-offset-2
           h2 Вакуумные испытания
-          ul.nav.nav-pills
-            li.dropdown(role='presentation')
-              a.dropdown-toggle(data-toggle='dropdown', href='#', role='button', aria-haspopup='true', aria-expanded='false') touch
-                span.caret
-              ul.dropdown-menu
-                li
+               button.btn.btn-info(type='button', data-toggle='collapse', data-target='#demo') Simple collapsible
+               .collapse
                   each system in vacsystems 
                     .panel-body
                       table#tablesettings.table.table-bordered
                         tr
                           td(rowspan='3') 
-                            p: img(src=`images/${system.code}.jpg`)
+                           // p: img(src=`images/${system.code}.jpg`)
                           td 
                             strong 
                                   a(name=`${system.code}`) 
@@ -164,7 +156,8 @@ html(lang='ru')
                         tr
                           td 
                             p= system.details
-                // Contacts Section
+
+
     section#contacts.container.content-section.text-center
       .row
         .col-lg-8.col-lg-offset-2
@@ -187,4 +180,7 @@ html(lang='ru')
     script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false')
     // Theme JavaScript
     script(src='js/scripts.js')
+    //collapse
+    
+    
 
