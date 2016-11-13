@@ -62,8 +62,3 @@ var outputPath = nodePath.join(__dirname, 'data.json');
 
 fs.writeFileSync(outputPath, json);
 console.log('Done.');
-
-
-
-
-
